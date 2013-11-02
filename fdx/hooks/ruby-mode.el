@@ -1,19 +1,23 @@
-;; show wrap guide
+(message "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA")
+;; fci-mode
 (require 'fill-column-indicator)
 (setq fci-rule-column 80)
+(fci-rule-color "gray3")
+(fci-rule-width 4)
 (fci-mode)
-(local-set-key (kbd "C-c v w") 'fci-mode)
 
 ;; activate character pairing
+(require 'smartparens)
 (smartparens-mode)
 
-(sp-with-modes (list major-mode)
-  (sp-local-pair "|" "|"))
+;(sp-with-modes (list major-mode)
+;  (sp-local-pair "|" "|"))
 
-;; do some spell checking (requires:  brew install aspell --lang=en)
-(flyspell-prog-mode)
+(require 'whitespace)
+;(whitespace-mode)
+;; Show trailing whitespaces
+(setq show-trailing-whitespace t)
 
-(local-set-key (kbd "C-c v s") 'fdx/toggle-program-spelling)
-
-
-(local-set-key (kbd "C-c x") 'xmp)  ; (requires:  gem install rcodetools)
+;; Delete trailing whitespace before saving
+(add-hook 'before-save-hook 'delete-trailing-whitespace)
+(message "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA")

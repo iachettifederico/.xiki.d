@@ -1,5 +1,7 @@
 ;; FDX's Emacs configuration
 
+(require 'autoload)
+
 ;;; TEMP ;;;
 (defun j2f ()
   (interactive)
