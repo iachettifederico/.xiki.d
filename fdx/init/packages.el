@@ -56,9 +56,14 @@
   (fdx/package-delete-unless-listed packages))
 
 (fdx/package-install-and-remove-to-match-list
- 'idomenu
+ 'ido
  'magit
- 'winner-mode
+ 'ruby-mode
+ 'ruby-compilation
+ 'rhtml-mode
+ 'yasnippet
+ 'fill-column-indicator
+ 'smartparens
  )
 
 ;; vendored packages
