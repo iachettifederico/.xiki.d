@@ -1,9 +1,6 @@
-(message "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA")
 ;; fci-mode
 (require 'fill-column-indicator)
 (setq fci-rule-column 80)
-(fci-rule-color "gray3")
-(fci-rule-width 4)
 (fci-mode)
 
 ;; activate character pairing
