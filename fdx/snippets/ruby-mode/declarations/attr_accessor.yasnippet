@@ -1,6 +1,7 @@
 # -*- mode: snippet -*-
 # name: attr_accessor
-# key: rw
 # key: wr
+# key: rw
 # --
-attr_accessor :${1:attr_names}
+attr_accessor :${1:$$(replace-regexp-in-string ",? :?" ", :" yas-text)}
+$0

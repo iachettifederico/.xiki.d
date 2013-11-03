@@ -2,4 +2,5 @@
 # name: attr_writer
 # key: w
 # --
-attr_writer :${1:attr_names}
+attr_writer :${1:$$(replace-regexp-in-string ",? :?" ", :" yas-text)}
+$0

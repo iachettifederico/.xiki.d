@@ -2,4 +2,5 @@
 # name: attr_reader
 # key: r
 # --
-attr_reader :${1:attr_names}
+attr_reader :${1:$$(replace-regexp-in-string ",? :?" ", :" yas-text)}
+$0

@@ -6,7 +6,7 @@ def initialize(${1:args})
   ${1:$
 (mapconcat
  '(lambda (x) (concat "@" x " = " x))
- (split-string text ", ")
+ (split-string yas-text ", ")
  (concat "\n" (make-string (current-column) 32)))
 }$0
 end

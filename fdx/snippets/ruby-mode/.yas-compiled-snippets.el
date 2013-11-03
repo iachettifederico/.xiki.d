@@ -36,19 +36,19 @@
 		     '(("#" "# => " "Result Marker" nil
 			("declarations")
 			nil nil nil nil)
-		       ("a" "SASASASAS" "para jugar" nil
+		       ("a" "attr_reader :${1:$$(replace-regexp-in-string \",? :?\" \", :\" yas-text)}\n$0" "para jugar" nil
 			("declarations")
 			nil nil nil nil)
 		       ("am" "alias_method :${1:new_name}, :${2:old_name}" "alias_method" nil
 			("declarations")
 			nil nil nil nil)
-		       ("wr" "attr_accessor :${1:attr_names}" "attr_accessor" nil
+		       ("rw" "attr_accessor :${1:$$(replace-regexp-in-string \",? :?\" \", :\" yas-text)}\n$0" "attr_accessor" nil
 			("declarations")
 			nil nil nil nil)
-		       ("r" "attr_reader :${1:attr_names}" "attr_reader" nil
+		       ("r" "attr_reader :${1:$$(replace-regexp-in-string \",? :?\" \", :\" yas-text)}\n$0" "attr_reader" nil
 			("declarations")
 			nil nil nil nil)
-		       ("w" "attr_writer :${1:attr_names}" "attr_writer" nil
+		       ("w" "attr_writer :${1:$$(replace-regexp-in-string \",? :?\" \", :\" yas-text)}\n$0" "attr_writer" nil
 			("declarations")
 			nil nil nil nil)
 		       ("begin" "begin\n  $0\nrescue ${1:Exception}${2:$(if (> (length text) 0) \" => \" \"\")}${2:error}\n  \nend" "begin" nil
@@ -61,7 +61,7 @@
 		       ("cla" "class ${1:`(jeg2/camelize (file-name-nondirectory (file-name-sans-extension (buffer-file-name))))`}${2:$(if (> (length text) 0) \" < \" \"\")}${2:ParentClass}\n  $0\nend" "class" nil
 			("declarations")
 			nil nil nil nil)
-		       ("ctor" "def initialize(${1:args})\n  ${1:$\n(mapconcat\n '(lambda (x) (concat \"@\" x \" = \" x))\n (split-string text \", \")\n (concat \"\\n\" (make-string (current-column) 32)))\n}$0\nend\n" "def initialize(...)" nil
+		       ("ctor" "def initialize(${1:args})\n  ${1:$\n(mapconcat\n '(lambda (x) (concat \"@\" x \" = \" x))\n (split-string yas-text \", \")\n (concat \"\\n\" (make-string (current-column) 32)))\n}$0\nend\n" "def initialize(...)" nil
 			("declarations")
 			nil nil nil nil)
 		       ("defi" "def initialize${1:$(if (> (length text) 0) \"(\" \"\")}${1:args}${1:$(if (> (length text) 0) \")\" \"\")}\n  $0\nend" "def initialize" nil
@@ -861,4 +861,4 @@
 			nil nil nil nil)))
 
 
-;;; Do not edit! File generated at Sun Nov  3 01:14:14 2013
+;;; Do not edit! File generated at Sun Nov  3 12:34:58 2013
