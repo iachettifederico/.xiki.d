@@ -58,14 +58,15 @@
 (fdx/package-install-and-remove-to-match-list
  'ido
  'magit
- 'ruby-mode
- 'ruby-compilation
- 'rhtml-mode
  'yasnippet
  'fill-column-indicator
  'smartparens
  'color-theme
  'color-theme-ir-black
+ 'rvm
+ 'ruby-mode
+ 'ruby-compilation
+ 'rhtml-mode
  )
 
 ;; vendored packages
