@@ -64,6 +64,8 @@
  'yasnippet
  'fill-column-indicator
  'smartparens
+ 'color-theme
+ 'color-theme-ir-black
  )
 
 ;; vendored packages
