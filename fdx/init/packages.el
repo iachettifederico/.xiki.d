@@ -57,6 +57,8 @@
 
 (fdx/package-install-and-remove-to-match-list
  'ido
+ 'flx-ido
+ 'ido-vertical-mode
  'magit
  'yasnippet
  'fill-column-indicator
