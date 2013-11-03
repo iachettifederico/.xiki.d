@@ -2,6 +2,7 @@
 (require 'fill-column-indicator)
 (setq fci-rule-column 80)
 (fci-mode)
+(fci-rule-width 4)
 
 ;; activate character pairing
 (require 'smartparens)

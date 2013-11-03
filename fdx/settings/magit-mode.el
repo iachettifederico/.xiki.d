@@ -20,3 +20,5 @@
   (interactive)
   (kill-buffer)
   (jump-to-register :magit-fullscreen))
+
+(global-set-key (kbd "C-c g") 'magit-status)

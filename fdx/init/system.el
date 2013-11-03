@@ -10,3 +10,7 @@
 
 ;; load minimal early system settings
 (fdx/load-init-file "fdx/system/minimal.el")
+
+;; load minimal early system settings
+(fdx/load-init-file "fdx/system/emacs-configurations.el")
+
