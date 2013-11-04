@@ -65,11 +65,13 @@
  'smartparens
  'color-theme
  'color-theme-ir-black
+ 'multiple-cursors
  'rvm
  'ruby-mode
  'ruby-compilation
  'rhtml-mode
  'dired+
+ 'paredit
  )
 
 ;; vendored packages
