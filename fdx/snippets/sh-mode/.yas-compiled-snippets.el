@@ -1,2 +1,2 @@
 ;;; Compiled snippets and support files for `sh-mode'
-;;; Do not edit! File generated at Sun Nov  3 12:34:58 2013
+;;; Do not edit! File generated at Mon Nov  4 01:26:53 2013

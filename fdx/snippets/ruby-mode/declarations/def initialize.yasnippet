@@ -1,7 +1,7 @@
 # -*- mode: snippet -*-
 # name: def initialize
-# key: defi
+# key: init
 # --
-def initialize${1:$(if (> (length text) 0) "(" "")}${1:args}${1:$(if (> (length text) 0) ")" "")}
+def initialize${1:$(if (> (length yas-text) 0) "(" "")}${1:args}${1:$(if (> (length yas-text) 0) ")" "")}
   $0
 end
