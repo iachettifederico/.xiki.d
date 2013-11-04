@@ -2,7 +2,6 @@
 (require 'fill-column-indicator)
 (setq fci-rule-column 80)
 (fci-mode)
-(fci-rule-width 4)
 
 ;; activate character pairing
 (require 'smartparens)
@@ -11,11 +10,16 @@
 ;(sp-with-modes (list major-mode)
 ;  (sp-local-pair "|" "|"))
 
-(require 'whitespace)
-;(whitespace-mode)
-;; Show trailing whitespaces
-(setq show-trailing-whitespace t)
+;; Colorize symbols correctly in ruby-mode
+(font-lock-add-keywords
+ 'ruby-mode
+ '(("\\(\\b\\sw[_a-zA-Z0-9]*:\\)\\(?:\\s-\\|$\\)" (1 font-lock-constant-face))))
+
+;; show junk whitespace
+(whitespace-mode)
 
 ;; Delete trailing whitespace before saving
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
-(message "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA")
+
+
+(local-set-key (kbd "RET") 'fdx/indent-this-and-previous)
