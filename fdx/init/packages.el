@@ -69,6 +69,7 @@
  'ruby-mode
  'ruby-compilation
  'rhtml-mode
+ 'dired+
  )
 
 ;; vendored packages
