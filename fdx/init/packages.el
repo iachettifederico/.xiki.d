@@ -69,9 +69,11 @@
  'rvm
  'ruby-mode
  'ruby-compilation
+ 'rspec-mode
  'rhtml-mode
  'dired+
  'paredit
+ 'ace-jump-mode
  )
 
 ;; vendored packages

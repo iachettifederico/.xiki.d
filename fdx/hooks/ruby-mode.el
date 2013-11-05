@@ -21,5 +21,7 @@
 ;; Delete trailing whitespace before saving
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
 
-
+(local-set-key (kbd "C-=") 'fdx/reindent-buffer)
 (local-set-key (kbd "RET") 'fdx/indent-this-and-previous)
+
+(local-set-key (kbd "M-j") 'ace-jump-mode)
