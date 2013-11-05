@@ -74,6 +74,8 @@
  'dired+
  'paredit
  'ace-jump-mode
+ 'expand-region
+ 'undo-tree
  )
 
 ;; vendored packages
