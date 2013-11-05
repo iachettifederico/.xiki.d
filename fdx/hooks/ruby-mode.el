@@ -23,5 +23,3 @@
 
 (local-set-key (kbd "C-=") 'fdx/reindent-buffer)
 (local-set-key (kbd "RET") 'fdx/indent-this-and-previous)
-
-(local-set-key (kbd "M-j") 'ace-jump-mode)
