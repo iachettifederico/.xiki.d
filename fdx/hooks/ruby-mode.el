@@ -27,3 +27,7 @@
 
 (require 'expand-region)
 (local-set-key (kbd "M-r") 'er/expand-region)
+
+
+;;; Refactorings
+(local-set-key (kbd "C-c r l") 'fdx/refactoring/extract-let)
