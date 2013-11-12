@@ -76,6 +76,7 @@
  'ace-jump-mode
  'expand-region
  'undo-tree
+ 'multi-term
  )
 
 ;; vendored packages
