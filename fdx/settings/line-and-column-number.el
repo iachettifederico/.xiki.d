@@ -1,3 +1,4 @@
-;; Always display line and column numbers
-(setq line-number-mode t)
-(setq column-number-mode t)
+;;;; Show line Numbers
+(global-linum-mode t)
+(set-face-attribute 'linum nil :background "#191919")
+(column-number-mode)
