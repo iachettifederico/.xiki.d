@@ -23,3 +23,27 @@
     (while (search-forward-regexp " +" (line-end-position) t)
       (replace-match " " nil nil)
       )))
+
+;;;###autoload
+(defun fdx/refactoring/extract-method (beg end)
+  "Extract the selected text as a method"
+  (interactive "r")
+  (save-excursion
+    (let ((body (buffer-substring beg end))
+          (method-name (read-string "Enter method name: ")))
+      (deactivate-mark)
+      (delete-region beg end)
+      (insert method-name)
+      (search-backward-regexp "^ *def *")
+      (beginning-of-line)
+      (insert "def ")
+      (insert method-name)
+      (insert "\n")
+      (insert body)
+      (insert "\n")
+      (insert "end")
+      (insert "\n")
+      (insert "\n")
+      (search-backward-regexp "^ *def *")
+      (fdx/reindent-buffer)
+      )))
