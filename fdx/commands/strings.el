@@ -67,3 +67,15 @@
                                                         "\\\\'")
                                    "'"))
                    (goto-char (+ old_point 1)))))))))
+
+
+;;;###autoload
+(defun fdx/underscore (region-start region-end)
+  "Forces a string into underscore."
+  (interactive "r")
+  (mapconcat (lambda (s)
+               (downcase s))
+             (split-string str "[^A-Za-z0-9]")
+             "_"))
+
+;; hola manola
