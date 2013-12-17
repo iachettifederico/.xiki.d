@@ -4,5 +4,5 @@
 (global-set-key (kbd "C-c i") 'align-regexp)
 
 
-(global-unset-key (kbd "M-l"))
-(global-set-key (kbd "M-l") 'kill-whole-line)
+(global-unset-key (kbd "M--"))
+(global-set-key (kbd "M--") 'kill-whole-line)
