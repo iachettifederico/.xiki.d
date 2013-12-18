@@ -40,12 +40,12 @@
 (defun fdx/package-requirements (package)
   "List of recursive dependencies for a package."
   (let ((package-info (cdr (assoc package package-alist))))
-     (cond ((null package-info) (list package))
-           (t
-            (fdx/flatten
-             (cons package
-                   (mapcar 'fdx/package-requirements
-                           (mapcar 'car (package-desc-reqs package-info)))))))))
+    (cond ((null package-info) (list package))
+          (t
+           (fdx/flatten
+            (cons package
+                  (mapcar 'fdx/package-requirements
+                          (mapcar 'car (package-desc-reqs package-info)))))))))
 
 (defun fdx/package-install-and-remove-to-match-list (&rest packages)
   "Sync packages so the installed list matches the passed list."
