@@ -1,4 +1,4 @@
-(rvm-activate-corresponding-ruby)
+;;(rvm-activate-corresponding-ruby)
 
 ;; fci-mode
 (require 'fill-column-indicator)
