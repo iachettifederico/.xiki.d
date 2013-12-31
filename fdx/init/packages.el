@@ -71,6 +71,7 @@
  'ruby-compilation
  'rspec-mode
  'rhtml-mode
+ 'haml-mode
  'dired+
  'paredit
  'ace-jump-mode
