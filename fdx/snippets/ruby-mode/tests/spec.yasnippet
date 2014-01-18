@@ -8,6 +8,6 @@ describe `(let ((fn (capitalize (file-name-nondirectory
                                  (file-name-sans-extension
                  (or (buffer-file-name)
                      (buffer-name (current-buffer))))))))
-                     (replace-regexp-in-string "_\\|Spec" "" fn))`
+                     (replace-regexp-in-string "_\\|Spec" "" fn))` do
   $0
 end
