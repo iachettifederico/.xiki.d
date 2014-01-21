@@ -23,6 +23,7 @@
 ;; Delete trailing whitespace before saving
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
 
+(local-unset-key (kbd "C-="))
 (local-set-key (kbd "C-=") 'fdx/reindent-buffer)
 (local-unset-key (kbd "M-="))
 (local-set-key (kbd "M-=") 'fdx/reindent-buffer)
@@ -32,7 +33,6 @@
 
 (require 'expand-region)
 (local-set-key (kbd "M-r") 'er/expand-region)
-
 
 ;;; Refactorings
 (local-set-key (kbd "C-c r l") 'fdx/refactoring/extract-let)
