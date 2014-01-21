@@ -4,23 +4,37 @@
   (dired-at-point project-folder)
   )
 
+(global-set-key (kbd "C-c C-p f")
+                (lambda ()
+                  (interactive)
+                  (open-project "~/")))
 
-(global-set-key (kbd "C-c C-o e")
+(global-set-key (kbd "C-c C-p t")
+                (lambda ()
+                  (interactive)
+                  (find-file "~/code/intentional_excellence/time_sheet.rb")))
+
+(global-set-key (kbd "C-c C-p c")
+                (lambda ()
+                  (interactive)
+                  (open-project "~/code")))
+
+(global-set-key (kbd "C-c C-p e")
                 (lambda ()
                   (interactive)
                   (open-project "~/.emacs.d/fdx/")))
 
-(global-set-key (kbd "C-c C-o i")
+(global-set-key (kbd "C-c C-p i")
                 (lambda ()
                   (interactive)
                   (open-project "~/code/intentional_excellence")))
 
-(global-set-key (kbd "C-c C-o d")
+(global-set-key (kbd "C-c C-p d")
                 (lambda ()
                   (interactive)
                   (open-project "~/code/intentional_excellence/devchattv")))
 
-(global-set-key (kbd "C-c C-o t")
+(global-set-key (kbd "C-c C-p h")
                 (lambda ()
                   (interactive)
-                  (find-file "~/code/intentional_excellence/time_sheet.rb")))
+                  (open-project "~/code/intentional_excellence/healthsciencewriters")))
