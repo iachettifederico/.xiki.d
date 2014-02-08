@@ -65,6 +65,7 @@
  'smartparens
  'color-theme
  'color-theme-ir-black
+ 'color-theme-railscasts
  'multiple-cursors
  'rvm
  'ruby-mode

@@ -1,4 +1,5 @@
 (require 'color-theme)
 (color-theme-initialize)
 (require 'color-theme-ir-black)
+(require 'color-theme-railscasts)
 (color-theme-ir-black)
