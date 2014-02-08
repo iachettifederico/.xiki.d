@@ -12,7 +12,7 @@
 (global-set-key (kbd "C-c C-p t")
                 (lambda ()
                   (interactive)
-                  (find-file "~/code/intentional_excellence/time_sheet.rb")))
+                  (open-project "~/code/time_tracker")))
 
 (global-set-key (kbd "C-c C-p c")
                 (lambda ()
