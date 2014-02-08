@@ -2,5 +2,9 @@
 # name: attr_writer
 # key: w
 # --
-attr_writer :${1:$$(replace-regexp-in-string ",? :?" ", :" yas-text)}
-$0
+# ${1:fields}$0
+${1:$
+(mapconcat
+        '(lambda (x) (concat "attr_writer :" x))
+        (split-string yas-text " ")
+        (concat "\n" (make-string (current-column) 32)))}
