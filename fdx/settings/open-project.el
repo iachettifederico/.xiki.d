@@ -14,6 +14,11 @@
                   (interactive)
                   (open-project "~/code/time_tracker")))
 
+(global-set-key (kbd "C-c C-p y")
+                (lambda ()
+                  (interactive)
+                  (open-project "~/code/fdx-dashbouard-rails")))
+
 (global-set-key (kbd "C-c C-p c")
                 (lambda ()
                   (interactive)
@@ -23,6 +28,11 @@
                 (lambda ()
                   (interactive)
                   (open-project "~/.emacs.d/fdx/")))
+
+(global-set-key (kbd "C-c C-p z")
+                (lambda ()
+                  (interactive)
+                  (find-file "~/.zshrc")))
 
 (global-set-key (kbd "C-c C-p i")
                 (lambda ()
