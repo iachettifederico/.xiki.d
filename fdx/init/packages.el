@@ -73,6 +73,8 @@
  'rspec-mode
  'rhtml-mode
  'haml-mode
+ 'slim-mode
+ 'coffee-mode
  'dired+
  'paredit
  'ace-jump-mode
