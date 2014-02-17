@@ -17,7 +17,7 @@
 (global-set-key (kbd "C-c C-p y")
                 (lambda ()
                   (interactive)
-                  (open-project "~/code/fdx-dashbouard-rails")))
+                  (open-project "~/code/dashboard-rails")))
 
 (global-set-key (kbd "C-c C-p c")
                 (lambda ()
