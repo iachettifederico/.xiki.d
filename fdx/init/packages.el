@@ -74,6 +74,9 @@
  'rhtml-mode
  'haml-mode
  'slim-mode
+ 'yaml-mode
+ 'css-mode
+ 'scss-mode
  'coffee-mode
  'dired+
  'paredit
