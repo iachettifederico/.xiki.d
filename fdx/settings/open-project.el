@@ -34,6 +34,11 @@
                   (interactive)
                   (find-file "~/.zshrc")))
 
+(global-set-key (kbd "C-c C-p s")
+                (lambda ()
+                  (interactive)
+                  (switch-to-buffer "*scratch*")))
+
 (global-set-key (kbd "C-c C-p i")
                 (lambda ()
                   (interactive)
