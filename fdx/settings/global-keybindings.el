@@ -16,3 +16,13 @@
 
 (global-set-key (kbd "C-x C-r") 'rename-current-buffer-file)
 (global-set-key (kbd "C-x C-k") 'delete-current-buffer-file)
+
+(global-unset-key (kbd "C-x \\"))
+(global-set-key (kbd "C-x \\") 'split-window-right)
+(global-unset-key (kbd "C-x |"))
+(global-set-key (kbd "C-x |") 'split-window-right)
+
+(global-unset-key (kbd "C-x -"))
+(global-set-key (kbd "C-x -") 'split-window-below)
+(global-unset-key (kbd "C-x _"))
+(global-set-key (kbd "C-x _") 'split-window-below)
