@@ -1,9 +1,3 @@
-(defun open-project (project-folder)
-  "Open DevChat.tv project."
-  (interactive)
-  (dired-at-point project-folder)
-  )
-
 (global-set-key (kbd "C-c C-p f")
                 (lambda ()
                   (interactive)

@@ -38,3 +38,8 @@
 (global-set-key (kbd "M-S-<f5>") (lambda () (interactive) (jw-shell 5)))
 (global-set-key (kbd "M-S-<f6>") (lambda () (interactive) (jw-shell 6)))
 (global-set-key (kbd "M-S-<f7>") (lambda () (interactive) (jw-shell 7)))
+
+(global-set-key (kbd "C-c C-o g") 'open-gemfile)
+(global-set-key (kbd "C-c C-o s") 'open-schema)
+(global-set-key (kbd "C-c C-o r") 'open-routes)
+(global-set-key (kbd "C-c C-o t") 'open-rakefile)
