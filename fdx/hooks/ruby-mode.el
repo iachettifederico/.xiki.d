@@ -39,3 +39,5 @@
 ;;; Refactorings
 (local-set-key (kbd "C-c r l") 'fdx/refactoring/extract-let)
 (local-set-key (kbd "C-c r e") 'fdx/refactoring/extract-method)
+
+(subword-mode)
