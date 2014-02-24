@@ -28,6 +28,9 @@
 (global-set-key (kbd "C-x _") 'split-window-below)
 
 (global-set-key (kbd "C-x t") 'jw-shell)
+
+(global-unset-key (kbd "C-z"))
+
 (global-set-key (kbd "M-S-<f1>") (lambda () (interactive) (jw-shell 1)))
 (global-set-key (kbd "M-S-<f2>") (lambda () (interactive) (jw-shell 2)))
 (global-set-key (kbd "M-S-<f3>") (lambda () (interactive) (jw-shell 3)))
