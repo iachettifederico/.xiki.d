@@ -8,8 +8,8 @@
 (global-set-key (kbd "M--") 'kill-whole-line)
 (global-set-key (kbd "C-d") 'duplicate-line)
 
-(global-set-key (kbd "C-M-8") 'color-theme-ir-black)
-(global-set-key (kbd "C-M-9") 'color-theme-railscasts)
+(global-set-key (kbd "C-<f8>") 'color-theme-ir-black)
+(global-set-key (kbd "C-<f9>") 'color-theme-railscasts)
 
 (global-set-key (kbd "<M-down>") 'move-line-down)
 (global-set-key (kbd "<M-up>") 'move-line-up)
@@ -38,6 +38,9 @@
 (global-set-key (kbd "M-S-<f5>") (lambda () (interactive) (jw-shell 5)))
 (global-set-key (kbd "M-S-<f6>") (lambda () (interactive) (jw-shell 6)))
 (global-set-key (kbd "M-S-<f7>") (lambda () (interactive) (jw-shell 7)))
+
+(global-set-key (kbd "C-c C-p q") 'current-dir-as-current-project)
+(global-set-key (kbd "C-c C-o q") 'current-dir-as-current-project)
 
 (global-set-key (kbd "C-c C-o g") 'open-gemfile)
 (global-set-key (kbd "C-c C-o s") 'open-schema)
