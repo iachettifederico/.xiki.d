@@ -69,6 +69,7 @@
  'multiple-cursors
  'rvm
  'ruby-mode
+ 'rinari
  'ruby-compilation
  'rspec-mode
  'rhtml-mode
@@ -84,6 +85,7 @@
  'expand-region
  'undo-tree
  'multi-term
+ 'swoop
  )
 
 ;; vendored packages
