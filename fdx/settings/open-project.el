@@ -43,6 +43,11 @@
                   (interactive)
                   (open-project "~/code/intentional_excellence/devchattv")))
 
+(global-set-key (kbd "C-c C-p w")
+                (lambda ()
+                  (interactive)
+                  (open-project "~/code/dashboard")))
+
 (global-set-key (kbd "C-c C-p h")
                 (lambda ()
                   (interactive)
