@@ -10,9 +10,16 @@
 
 (global-set-key (kbd "C-<f8>") 'color-theme-ir-black)
 (global-set-key (kbd "C-<f9>") 'color-theme-railscasts)
+(global-set-key (kbd "C-<f10>") 'color-theme-dark-laptop)
+(global-set-key (kbd "C-<f11>") 'color-theme-deep-blue)
 
+(global-unset-key (kbd "C-M-j"))
+(global-unset-key (kbd "C-M-k"))
 (global-set-key (kbd "<M-down>") 'move-line-down)
 (global-set-key (kbd "<M-up>") 'move-line-up)
+(global-set-key (kbd "C-M-j") 'move-line-down)
+(global-set-key (kbd "C-M-k") 'move-line-up)
+
 
 (global-set-key (kbd "C-x C-r") 'rename-current-buffer-file)
 (global-set-key (kbd "C-x C-k") 'delete-current-buffer-file)
@@ -21,6 +28,9 @@
 (global-set-key (kbd "C-x \\") 'split-window-right)
 (global-unset-key (kbd "C-x |"))
 (global-set-key (kbd "C-x |") 'split-window-right)
+
+(global-set-key (kbd "C-x /") 'toggle-window-split)
+
 
 (global-unset-key (kbd "C-x -"))
 (global-set-key (kbd "C-x -") 'split-window-below)
