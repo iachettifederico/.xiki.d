@@ -1,3 +1,4 @@
+;;;###autoload
 (defun toggle-window-split ()
   (interactive)
   (if (= (count-windows) 2)
