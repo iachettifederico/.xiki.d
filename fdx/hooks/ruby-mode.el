@@ -5,12 +5,8 @@
 (setq fci-rule-column 80)
 (fci-mode)
 
-;; activate character pairing
-(require 'smartparens)
-(smartparens-mode)
-
-;(sp-with-modes (list major-mode)
-;  (sp-local-pair "|" "|"))
+(require 'ruby-electric)
+(electric-pair-mode t)
 
 ;; Colorize symbols correctly in ruby-mode
 (font-lock-add-keywords
