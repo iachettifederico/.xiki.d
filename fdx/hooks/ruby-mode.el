@@ -37,3 +37,6 @@
 (local-set-key (kbd "C-c r e") 'fdx/refactoring/extract-method)
 
 (subword-mode)
+
+;;(setq ruby-deep-arglist nil)          ; Obsolete?
+(setq ruby-deep-indent-paren-style nil)
