@@ -9,9 +9,8 @@
 (global-set-key (kbd "C-d") 'duplicate-line)
 
 (global-set-key (kbd "C-<f8>") 'color-theme-ir-black)
-(global-set-key (kbd "C-<f9>") 'color-theme-railscasts)
-(global-set-key (kbd "C-<f10>") 'color-theme-dark-laptop)
-(global-set-key (kbd "C-<f11>") 'color-theme-deep-blue)
+(global-set-key (kbd "C-<f9>") 'color-theme-dark-laptop)
+(global-set-key (kbd "C-<f10>") 'color-theme-deep-blue)
 
 (global-unset-key (kbd "C-M-j"))
 (global-unset-key (kbd "C-M-k"))
