@@ -69,6 +69,7 @@
  'multiple-cursors
  'rvm
  'ruby-mode
+ 'ruby-electric
  'rinari
  'ruby-compilation
  'rspec-mode
