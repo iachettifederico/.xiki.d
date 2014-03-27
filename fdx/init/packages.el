@@ -87,6 +87,7 @@
  'undo-tree
  'multi-term
  'swoop
+ 'babel
  )
 
 ;; vendored packages
