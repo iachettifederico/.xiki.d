@@ -1,5 +1,5 @@
-;;;; Ido-mode
-;; Config M-x mode for ido
+;; ;;;; Ido-mode
+;; ;; Config M-x mode for ido
 (global-set-key
  "\M-x"
  (lambda ()
@@ -11,7 +11,7 @@
 
 (ido-mode t)
 
-;(ido-ubiquitous t)
+(ido-ubiquitous t)
 (setq ido-enable-prefix nil
       ido-enable-flex-matching t
       ido-auto-merge-work-directories-length nil
@@ -21,12 +21,12 @@
       ido-handle-duplicate-virtual-buffers 2
       ido-max-prospects 10)
 
-; Flex matching for ido-mode
-(require 'flx-ido)
-(flx-ido-mode 1)
-;; Disable ido faces to see flx higlights
-(setq ido-use-faces nil)
+;; ; Flex matching for ido-mode
+;; (require 'flx-ido)
+;; (flx-ido-mode 1)
+;; ;; Disable ido faces to see flx higlights
+;; (setq ido-use-faces nil)
 
-;; Ido vertical mode (like Vim's CtrlP)
-(require 'ido-vertical-mode)
-(ido-vertical-mode)
+;; ;; Ido vertical mode (like Vim's CtrlP)
+;; (require 'ido-vertical-mode)
+;; (ido-vertical-mode)

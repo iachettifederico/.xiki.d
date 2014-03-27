@@ -59,6 +59,7 @@
  'ido
  'flx-ido
  'ido-vertical-mode
+ 'ido-ubiquitous
  'magit
  'yasnippet
  'fill-column-indicator
