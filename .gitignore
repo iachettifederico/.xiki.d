@@ -1,0 +1,6 @@
+*
+!init.el
+!fdx
+
+fdx/settings/secrets.el
+fdx/**/*.elc
