@@ -18,3 +18,5 @@
   )
 
 (normal-appearence)
+
+(show-paren-mode t)
