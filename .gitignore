@@ -3,4 +3,5 @@
 !fdx
 
 fdx/settings/secrets.el
+!fdx/**/*
 fdx/**/*.elc

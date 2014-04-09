@@ -88,6 +88,7 @@
  'multi-term
  'swoop
  'babel
+ 'projectile
  )
 
 ;; vendored packages
