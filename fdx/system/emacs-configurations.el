@@ -6,6 +6,7 @@
  '(fci-rule-color "gray3")
  '(fci-rule-width 4)
  '(rspec-use-rake-when-possible nil))
+ '(rspec-use-rake-when-possible nil)
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
