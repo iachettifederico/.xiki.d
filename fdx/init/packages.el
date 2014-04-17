@@ -66,6 +66,7 @@
  'smartparens
  'color-theme
  'color-theme-ir-black
+ 'color-theme-sanityinc-tomorrow
  'multiple-cursors
  'rvm
  'ruby-mode
