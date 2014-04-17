@@ -5,3 +5,4 @@
 fdx/settings/secrets.el
 !fdx/**/*
 fdx/**/*.elc
+fdx/snippets/**/.yas-compiled-snippets.el
