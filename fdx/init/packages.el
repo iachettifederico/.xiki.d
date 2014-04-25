@@ -72,6 +72,7 @@
  'ruby-mode
  'ruby-electric
  'rinari
+ 'inf-ruby
  'ruby-compilation
  'rspec-mode
  'rhtml-mode
@@ -90,6 +91,7 @@
  'swoop
  'babel
  'projectile
+ 'htmlize
  )
 
 ;; vendored packages
