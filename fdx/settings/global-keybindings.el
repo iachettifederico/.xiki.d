@@ -22,8 +22,11 @@
 (global-unset-key (kbd "C-M-k"))
 (global-set-key (kbd "<M-down>") 'move-line-down)
 (global-set-key (kbd "<M-up>") 'move-line-up)
-(global-set-key (kbd "C-M-j") 'move-line-down)
-(global-set-key (kbd "C-M-k") 'move-line-up)
+
+(global-set-key (kbd "C-M-i") 'previous-line)
+(global-set-key (kbd "C-M-k") 'next-line)
+(global-set-key (kbd "C-M-j") 'left-char)
+(global-set-key (kbd "C-M-l") 'right-char)
 
 
 (global-set-key (kbd "C-x C-r") 'rename-current-buffer-file)
