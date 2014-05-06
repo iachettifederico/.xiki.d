@@ -4,8 +4,12 @@
   (interactive)
   (require 'color-theme)
   (color-theme-initialize)
-  (require 'color-theme-ir-black)
-  (color-theme-ir-black)
+
+  ;;(require 'color-theme-ir-black)
+  ;;(color-theme-ir-black)
+
+  (require 'color-theme-sanityinc-tomorrow)
+  (color-theme-sanityinc-tomorrow-night)
 
 
   (custom-set-faces
