@@ -1,9 +1,9 @@
 ;;(rvm-activate-corresponding-ruby)
 
 ;; fci-mode
-(require 'fill-column-indicator)
-(setq fci-rule-column 80)
-(fci-mode)
+;; (require 'fill-column-indicator)
+;; (setq fci-rule-column 80)
+;; (fci-mode)
 
 (require 'ruby-electric)
 (electric-pair-mode t)
