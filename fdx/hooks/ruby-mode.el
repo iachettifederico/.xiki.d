@@ -29,8 +29,8 @@
 (local-set-key (kbd "C-;") 'comment-dwim)
 
 
-(require 'expand-region)
-(local-set-key (kbd "M-r") 'er/expand-region)
+;;(require 'expand-region)
+;;(local-set-key (kbd "M-r") 'er/expand-region)
 
 ;;; Refactorings
 (local-set-key (kbd "C-, l") 'fdx/refactoring/extract-let)
