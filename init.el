@@ -16,3 +16,4 @@
 (fdx/load-init-file "fdx/init/compile")
 (fdx/load-init-file "fdx/init/autohooks")
 (fdx/load-init-file "fdx/init/settings")
+(fdx/load-init-file "fdx/init/experimental")
