@@ -7,3 +7,6 @@
 (local-set-key (kbd "M-=") 'fdx/reindent-buffer)
 
 (local-set-key (kbd "RET") 'fdx/indent-this-and-previous)
+
+(local-set-key (kbd "C-c e") 'erb-to-haml-and-change-file-extension)
+(local-set-key (kbd "C-c C-e") 'erb-to-haml-and-change-file-extension)
