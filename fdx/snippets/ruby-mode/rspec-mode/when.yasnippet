@@ -2,4 +2,4 @@
 # name: When { ... }
 # key: wh
 # --
-When { $0 }
+When${1:$(if (> (length yas-text) 0) "(:" "")}${1:var}${1:$(if (> (length yas-text) 0) ")" "")} { $0 }

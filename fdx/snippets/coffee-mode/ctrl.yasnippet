@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+# name: Controller
+# key: ctrl
+# --
+app.controller "${1:Name}Ctrl", [${2:$
+(mapconcat
+ '(lambda (x) (concat "\'" x "\'"))
+ (split-string yas-text ", ")
+ ", ")}, (${2:dependencies}) ->
+$0
+  ]

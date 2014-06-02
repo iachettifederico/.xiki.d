@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name: Angular Controller
+# key: ctrl
+# --
+${1:app}.controller("${2:Name}Ctrl", ["$scope", "$http",
+  function($scope, $http) {
+    // $scope.init = (show_slug) ->
+    //   if(show_slug != '')
+    //     $http.get(api_url + "/show/" + show_slug + ".json")
+    //       .success (data, status, headers, config) ->
+    //         $scope.show = data
+  ]
+});
