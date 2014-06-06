@@ -76,6 +76,7 @@
  'ruby-compilation
  'rspec-mode
  'rhtml-mode
+ 'rinari
  'haml-mode
  'slim-mode
  'yaml-mode
