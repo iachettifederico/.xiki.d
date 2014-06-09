@@ -56,3 +56,4 @@
 (global-set-key (kbd "M-S-<f5>") (lambda () (interactive) (jw-shell 5)))
 (global-set-key (kbd "M-S-<f6>") (lambda () (interactive) (jw-shell 6)))
 (global-set-key (kbd "M-S-<f7>") (lambda () (interactive) (jw-shell 7)))
+(global-set-key (kbd "M-g") 'google)
