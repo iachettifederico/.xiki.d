@@ -3,12 +3,12 @@
 (global-set-key (kbd "C-<kp-add>") 'text-scale-increase)
 (global-set-key (kbd "C--") 'text-scale-decrease)
 (global-set-key (kbd "C-<kp-subtract>") 'text-scale-decrease)
+(global-set-key (kbd "C-0") 'text-scale-adjust)
 
 (global-set-key (kbd "C-c s") 'query-replace-regexp)
 (global-set-key (kbd "C-c S") 'replace-regexp)
 
 (global-set-key (kbd "C-c i") 'align-regexp)
-
 
 (global-unset-key (kbd "M--"))
 (global-set-key (kbd "M--") 'kill-whole-line)
@@ -56,4 +56,6 @@
 (global-set-key (kbd "M-S-<f5>") (lambda () (interactive) (jw-shell 5)))
 (global-set-key (kbd "M-S-<f6>") (lambda () (interactive) (jw-shell 6)))
 (global-set-key (kbd "M-S-<f7>") (lambda () (interactive) (jw-shell 7)))
+
 (global-set-key (kbd "M-g") 'google)
+(global-set-key (kbd "C-c k") 'kill-other-buffers)
