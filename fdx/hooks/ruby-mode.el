@@ -13,24 +13,8 @@
  'ruby-mode
  '(("\\(\\b\\sw[_a-zA-Z0-9]*:\\)\\(?:\\s-\\|,\\|)\\|$\\)" (1 font-lock-constant-face))))
 
-;; show junk whitespace
-(whitespace-mode)
-
-;; Delete trailing whitespace before saving
-(add-hook 'before-save-hook 'delete-trailing-whitespace)
-
-(local-unset-key (kbd "C-="))
-(local-set-key (kbd "C-=") 'fdx/reindent-buffer)
-(local-unset-key (kbd "M-="))
-(local-set-key (kbd "M-=") 'fdx/reindent-buffer)
-
-(local-set-key (kbd "RET") 'fdx/indent-this-and-previous)
 (local-set-key (kbd "C-c C-c") 'xmp)
 (local-set-key (kbd "C-;") 'comment-dwim)
-
-
-;;(require 'expand-region)
-;;(local-set-key (kbd "M-r") 'er/expand-region)
 
 ;;; Refactorings
 (local-set-key (kbd "C-, l") 'fdx/refactoring/extract-let)
@@ -48,8 +32,6 @@
 (local-set-key (kbd "M-r t") 'rrf-extract-temporary)
 (local-set-key (kbd "M-r i") 'rrf-inline-variable-definition)
 (local-set-key (kbd "M-r c") 'rrf-extract-constant)
-
-(subword-mode)
 
 ;;(setq ruby-deep-arglist nil)          ; Obsolete?
 (setq ruby-deep-indent-paren-style nil)
