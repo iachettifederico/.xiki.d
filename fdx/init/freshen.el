@@ -1,3 +1,6 @@
+(load "server")
+(unless (server-running-p) (server-start))
+
 (defun fdx/delete-out-of-date-bytecode (directory)
   "Remove any .elc file in the directory where the matching .el file is newer."
   (dolist (path-and-attributes (directory-files-and-attributes directory t))
