@@ -93,6 +93,7 @@
  'babel
  'projectile
  'htmlize
+ 'plantuml-mode
  )
 
 ;; vendored packages
