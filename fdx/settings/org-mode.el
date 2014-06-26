@@ -37,3 +37,5 @@
 
 ;; Use fundamental mode when editing plantuml blocks with C-c '
 (add-to-list 'org-src-lang-modes (quote ("plantuml" . fundamental)))
+
+(setq org-export-html-postamble nil)
