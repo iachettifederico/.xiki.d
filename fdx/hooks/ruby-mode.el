@@ -13,6 +13,8 @@
  'ruby-mode
  '(("\\(\\b\\sw[_a-zA-Z0-9]*:\\)\\(?:\\s-\\|,\\|)\\|$\\)" (1 font-lock-constant-face))))
 
+(local-unset-key (kbd "C-c C-c"))
+(local-unset-key (kbd "C-;"))
 (local-set-key (kbd "C-c C-c") 'xmp)
 (local-set-key (kbd "C-;") 'comment-dwim)
 
