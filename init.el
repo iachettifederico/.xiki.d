@@ -5,8 +5,6 @@
 
 ;; FDX's Emacs configuration
 
-(define-key key-translation-map (kbd "C-x C-x") (kbd "<C-return>"))
-
 (setq user-emacs-directory "/home/fedex/.xiki.d/")
 
 (require 'autoload)
