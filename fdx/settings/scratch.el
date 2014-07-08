@@ -4,5 +4,6 @@
 
 (with-current-buffer "*scratch*"
   (interactive)
+  (ruby-mode)
   (insert "RUBY_VERSION  # =>")
   (xmp))
