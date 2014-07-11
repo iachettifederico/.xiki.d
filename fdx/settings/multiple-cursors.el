@@ -2,6 +2,7 @@
 
 ;; Multiple cursors
 (global-set-key (kbd "C-M-<return>") 'mc/edit-lines)
+(global-unset-key (kbd "C-c C-a"))
 (global-set-key (kbd "C-c C-a") 'mc/edit-lines)
 (global-set-key (kbd "C-c a") 'mc/mark-all-like-this)
 
