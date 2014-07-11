@@ -94,6 +94,8 @@
  'projectile
  'htmlize
  'plantuml-mode
+ 'centered-cursor-mode
+ 'fullscreen-mode
  )
 
 ;; vendored packages
