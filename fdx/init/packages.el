@@ -67,6 +67,7 @@
  'color-theme
  'color-theme-ir-black
  'color-theme-sanityinc-tomorrow
+ 'color-theme-molokai
  'multiple-cursors
  'rvm
  'ruby-mode
@@ -101,3 +102,4 @@
 ;; vendored packages
 (fdx/load-init-file "fdx/vendor/rcodetools")
 (fdx/load-init-file "fdx/vendor/moz")
+(fdx/load-init-file "fdx/vendor/color-theme-rubytapas")
