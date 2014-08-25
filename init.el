@@ -4,9 +4,6 @@
 (el4r-boot)
 
 ;; FDX's Emacs configuration
-
-(setq user-emacs-directory "/home/fedex/.xiki.d/")
-
 (require 'autoload)
 
 
