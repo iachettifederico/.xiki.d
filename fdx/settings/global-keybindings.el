@@ -57,9 +57,10 @@
 (global-set-key (kbd "M-S-<f6>") (lambda () (interactive) (jw-shell 6)))
 (global-set-key (kbd "M-S-<f7>") (lambda () (interactive) (jw-shell 7)))
 
-(global-set-key (kbd "M-g") 'google)
 (global-set-key (kbd "C-c k") 'kill-other-buffers)
 
 (global-set-key (kbd "C-x C-w") (lambda () (interactive) (switch-to-buffer "@welcome/")))
 
 (global-set-key (kbd "<f11>") 'fullscreen-mode-fullscreen-toggle)
+
+(global-set-key (kbd "C-x C-l") 'el4r-jump-to-error)

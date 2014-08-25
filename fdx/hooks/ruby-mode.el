@@ -37,3 +37,10 @@
 
 ;;(setq ruby-deep-arglist nil)          ; Obsolete?
 (setq ruby-deep-indent-paren-style nil)
+
+;; Compilation
+(local-unset-key (kbd "C-\\"))
+(local-set-key (kbd "C-\\") 'recompile)
+
+(local-unset-key (kbd "M-\\"))
+(local-set-key (kbd "M-\\") 'compile)
