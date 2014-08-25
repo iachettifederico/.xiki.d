@@ -5,5 +5,6 @@
 (add-to-list 'auto-mode-alist '("\\.gemspec\\'"       . ruby-mode))
 (add-to-list 'auto-mode-alist '("Guardfile\\'"        . ruby-mode))
 (add-to-list 'auto-mode-alist '("\\.rabl\\'"          . ruby-mode))
+(add-to-list 'auto-mode-alist '("\\.env\\'"           . ruby-mode))
 (add-to-list 'auto-mode-alist '("\\.coffee\\.erb\\'"  . coffee-mode))
 (add-to-list 'auto-mode-alist '("\\.js\\.erb\\'"      . javascript-mode))
