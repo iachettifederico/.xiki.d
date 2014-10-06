@@ -19,6 +19,17 @@
         (run-with-timer 0 0.08 'trecs/htmlize-current-buffer)))
 
 ;;;###autoload
+(defadvice trecs/htmlize-current-buffer (around trecs/htmlize-around)
+  "Advice"
+  (if (looking-at "$")
+      (progn
+        (insert " ")
+        (backward-char)
+        ad-do-it
+        (delete-char 1))
+    ad-do-it))
+
+;;;###autoload
 (defun trecs/htmlize-current-buffer ()
   "htmlize the current section of the current buffer"
   (interactive)
@@ -27,11 +38,7 @@
     (save-restriction
       (trecs/activate-visible-mark)
       (push-mark-command nil t)
-      (if (looking-at "$")
-          (progn
-            (insert " ")
-            (backward-char))
-        )
+
       (let (
             (html (htmlize-region (trecs/buff-top) (trecs/buff-bottom)))
             )
