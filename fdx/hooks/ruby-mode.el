@@ -44,3 +44,5 @@
 
 (local-unset-key (kbd "M-\\"))
 (local-set-key (kbd "M-\\") 'compile)
+
+(setq xmpfilter-command-name "ruby -S xmpfilter --no-warnings --dev --fork --detect-rbtest")
