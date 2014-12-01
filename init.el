@@ -1,5 +1,5 @@
 ; Load el4r, which loads Xiki
-(add-to-list 'load-path "/home/fedex/.rvm/gems/ruby-1.9.3-p547/gems/trogdoro-el4r-1.0.10/data/emacs/site-lisp/")
+(add-to-list 'load-path "/home/fedex/.rvm/gems/ruby-1.9.3-p551/gems/trogdoro-el4r-1.0.10/data/emacs/site-lisp/")
 (require 'el4r)
 (el4r-boot)
 
