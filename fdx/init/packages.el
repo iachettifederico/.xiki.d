@@ -98,6 +98,7 @@
  'plantuml-mode
  'centered-cursor-mode
  'fullscreen-mode
+ 'highlight
  'markdown-mode
  'markdown-mode+
  )
