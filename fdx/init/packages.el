@@ -76,6 +76,7 @@
  'inf-ruby
  'ruby-compilation
  'rspec-mode
+ 'minitest
  'rhtml-mode
  'rinari
  'haml-mode
