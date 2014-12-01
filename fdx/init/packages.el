@@ -98,6 +98,8 @@
  'plantuml-mode
  'centered-cursor-mode
  'fullscreen-mode
+ 'markdown-mode
+ 'markdown-mode+
  )
 
 ;; vendored packages
