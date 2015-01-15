@@ -5,7 +5,8 @@
  ;; If there is more than one, they won't work right.
  '(fci-rule-color "gray3")
  '(fci-rule-width 4)
- '(rspec-use-rake-when-possible nil))
+ '(rspec-auto-scroll nil)
+ '(rspec-use-rake-when-possible t))
  '(rspec-use-rake-when-possible nil)
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
