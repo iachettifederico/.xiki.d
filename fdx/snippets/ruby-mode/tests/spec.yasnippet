@@ -1,13 +1,7 @@
 # -*- mode: snippet -*-
-#name : RSpec spec
+#name : spec
 #key : spec
 # --
-require "spec_helper"
-
-describe `(let ((fn (capitalize (file-name-nondirectory
-                                 (file-name-sans-extension
-                 (or (buffer-file-name)
-                     (buffer-name (current-buffer))))))))
-                     (replace-regexp-in-string "_\\|Spec" "" fn))` do
+spec ${1:something} do
   $0
 end
