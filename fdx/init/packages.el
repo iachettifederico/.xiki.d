@@ -3,8 +3,9 @@
 
 (require 'package)
 
-(dolist (repo '(("elpa"      . "http://tromey.com/elpa/")
+(dolist (repo '(
                 ("marmalade" . "http://marmalade-repo.org/packages/")
+                ("elpa"      . "http://tromey.com/elpa/")
                 ("melpa"     . "http://melpa.milkbox.net/packages/")))
   (add-to-list 'package-archives repo))
 
@@ -101,6 +102,7 @@
  'highlight
  'markdown-mode
  'markdown-mode+
+ 'org
  )
 
 ;; vendored packages
