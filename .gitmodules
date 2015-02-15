@@ -1,0 +1,3 @@
+[submodule "fdx/vendor/Enhanced-Ruby-Mode"]
+	path = fdx/vendor/Enhanced-Ruby-Mode
+	url = git@github.com:jacott/Enhanced-Ruby-Mode.git

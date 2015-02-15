@@ -80,6 +80,7 @@
  'minitest
  'rhtml-mode
  'rinari
+ 'enh-ruby-mode
  'haml-mode
  'slim-mode
  'yaml-mode
