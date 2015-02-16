@@ -1,17 +1,12 @@
-;; ;;(rvm-activate-corresponding-ruby)
+;; (rvm-activate-corresponding-ruby)
 
-;; ;; fci-mode
-;; ;; (require 'fill-column-indicator)
-;; ;; (setq fci-rule-column 80)
-;; ;; (fci-mode)
+;; fci-mode
+(require 'fill-column-indicator)
+(setq fci-rule-column 80)
+(fci-mode)
 
 (require 'ruby-electric)
 (electric-pair-mode t)
-
-;; ;; Colorize symbols correctly in ruby-mode
-;; (font-lock-add-keywords
-;;  'ruby-mode
-;;  '(("\\(\\b\\sw[_a-zA-Z0-9]*:\\)\\(?:\\s-\\|,\\|)\\|$\\)" (1 font-lock-constant-face))))
 
 (local-unset-key (kbd "C-c C-c"))
 (local-unset-key (kbd "C-;"))
@@ -36,5 +31,14 @@
 
 (local-unset-key (kbd "M-\\"))
 (local-set-key (kbd "M-\\") 'compile)
+
+(defadvice comment-dwim (around rct-hack activate)
+  "If comment-dwim is successively called, add => mark."
+  (if (and (eq major-mode 'enh-ruby-mode)
+           (eq last-command 'comment-dwim)
+           ;; TODO =>check
+           )
+      (insert "=>")
+    ad-do-it))
 
 (setq xmpfilter-command-name "ruby -S xmpfilter --no-warnings --dev --fork --detect-rbtest")
