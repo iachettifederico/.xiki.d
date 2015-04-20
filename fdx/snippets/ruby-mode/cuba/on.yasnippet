@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: on "blah" do ...
+# key: on
+# --
+on ${1:pattern} do
+  $0
+  res.write view("${2:some_view}", ${3:locals})
+end
