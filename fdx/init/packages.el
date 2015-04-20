@@ -104,6 +104,7 @@
  'markdown-mode
  'markdown-mode+
  'org
+ 'ace-window
  )
 
 ;; vendored packages
