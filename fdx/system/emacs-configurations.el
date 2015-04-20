@@ -7,6 +7,7 @@
  '(fci-rule-color "gray3")
  '(fci-rule-width 4)
  '(rspec-auto-scroll nil)
+ '(rspec-command-options "")
  '(rspec-use-rake-when-possible t))
  '(rspec-use-rake-when-possible nil)
 (custom-set-faces
