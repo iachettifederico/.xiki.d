@@ -131,6 +131,15 @@
       (replace-match " " nil nil)
       )))
 
+;;;###autoload
+(defun fdx/refactoring/interpolate-string (beg end)
+  (interactive "r")
+  (save-excursion
+    (goto-char end)
+    (insert "}")
+    (goto-char beg)
+    (insert "#{")))
+
 ;;; Utility Functions
 
 ;;;###autoload
@@ -221,11 +230,4 @@
   (insert-string (rrf-adj-endl beg end))
   (insert-string "\n"))
 
-;;; Key bindings
 
-(require 'ruby-mode)
-(define-key ruby-mode-map "\C-cac" 'rrf-extract-constant)
-(define-key ruby-mode-map "\C-cat" 'rrf-extract-temporary)
-(define-key ruby-mode-map "\C-cam" 'rrf-extract-method)
-(define-key ruby-mode-map "\C-caj" 'rrf-jump-to-extraction-point)
-(define-key ruby-mode-map "\C-cait" 'rrf-inline-variable-definition)

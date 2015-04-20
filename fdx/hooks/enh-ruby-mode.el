@@ -13,14 +13,13 @@
 (local-set-key (kbd "C-c C-c") 'xmp)
 (local-set-key (kbd "C-;") 'comment-dwim)
 
-;; ;;; Refactorings
+;;; Refactorings
 (local-set-key (kbd "M-r l") 'fdx/refactoring/extract-let)
-(local-set-key (kbd "M-r e") 'rrf-extract-method)
 (local-set-key (kbd "M-r m") 'rrf-extract-method)
-(local-set-key (kbd "M-r v") 'rrf-extract-temporary)
 (local-set-key (kbd "M-r t") 'rrf-extract-temporary)
-(local-set-key (kbd "M-r i") 'rrf-inline-variable-definition)
 (local-set-key (kbd "M-r c") 'rrf-extract-constant)
+(local-set-key (kbd "M-r i") 'fdx/refactoring/interpolate-string)
+
 
 ;; ;;(setq ruby-deep-arglist nil)          ; Obsolete?
 ;; (setq ruby-deep-indent-paren-style nil)
