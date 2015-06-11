@@ -19,7 +19,7 @@
 (local-set-key (kbd "M-r t") 'rrf-extract-temporary)
 (local-set-key (kbd "M-r c") 'rrf-extract-constant)
 (local-set-key (kbd "M-r i") 'fdx/refactoring/interpolate-string)
-
+(local-set-key (kbd "M-r s") 'fdx/refactoring/stringify-and-interpolate-string)
 
 ;; ;;(setq ruby-deep-arglist nil)          ; Obsolete?
 ;; (setq ruby-deep-indent-paren-style nil)

@@ -62,3 +62,4 @@
 (global-set-key (kbd "<XF86Forward>") 'trecs/start-recording)
 (global-set-key (kbd "<XF86Back>") 'trecs/stop-recording)
 (global-set-key (kbd "M-p") 'ace-window)
+
