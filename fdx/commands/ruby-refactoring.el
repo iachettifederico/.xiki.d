@@ -140,6 +140,15 @@
     (goto-char beg)
     (insert "#{")))
 
+;;;###autoload
+(defun fdx/refactoring/stringify-and-interpolate-string (beg end)
+  (interactive "r")
+  (save-excursion
+    (goto-char end)
+    (insert "}\"")
+    (goto-char beg)
+    (insert "\"#{")))
+
 ;;; Utility Functions
 
 ;;;###autoload
