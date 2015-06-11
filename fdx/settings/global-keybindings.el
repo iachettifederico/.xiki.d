@@ -59,8 +59,8 @@
 
 (global-set-key (kbd "C-c k") 'kill-other-buffers)
 
-(global-set-key (kbd "C-x C-w") (lambda () (interactive) (switch-to-buffer "@welcome/")))
-(global-set-key (kbd "C-c C-w") (lambda () (interactive) (switch-to-buffer "*scratch*")))
+(global-set-key (kbd "C-c C-w") (lambda () (interactive) (switch-to-buffer "@welcome/")))
+(global-set-key (kbd "C-x C-w") (lambda () (interactive) (switch-to-buffer "*scratch*")))
 
 (global-set-key (kbd "<f11>") 'fullscreen-mode-fullscreen-toggle)
 
