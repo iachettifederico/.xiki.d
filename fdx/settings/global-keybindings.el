@@ -65,6 +65,9 @@
 (global-set-key (kbd "<f11>") 'fullscreen-mode-fullscreen-toggle)
 
 (global-set-key (kbd "C-x C-l") 'el4r-jump-to-error)
+
+(global-set-key (kbd "S-<return>") 'fdx/ret-and-cursor-up)
+
 ;; TRecs
 (global-set-key (kbd "<XF86Forward>") 'trecs/start-recording)
 (global-set-key (kbd "<XF86Back>") 'trecs/stop-recording)
