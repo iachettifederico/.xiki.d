@@ -39,23 +39,13 @@
 
 (global-set-key (kbd "C-x /") 'toggle-window-split)
 
-
 (global-unset-key (kbd "C-x -"))
 (global-set-key (kbd "C-x -") 'split-window-below)
 (global-unset-key (kbd "C-x _"))
 (global-set-key (kbd "C-x _") 'split-window-below)
 
-(global-set-key (kbd "C-x t") 'jw-shell)
 
 (global-unset-key (kbd "C-z"))
-
-(global-set-key (kbd "M-S-<f1>") (lambda () (interactive) (jw-shell 1)))
-(global-set-key (kbd "M-S-<f2>") (lambda () (interactive) (jw-shell 2)))
-(global-set-key (kbd "M-S-<f3>") (lambda () (interactive) (jw-shell 3)))
-(global-set-key (kbd "M-S-<f4>") (lambda () (interactive) (jw-shell 4)))
-(global-set-key (kbd "M-S-<f5>") (lambda () (interactive) (jw-shell 5)))
-(global-set-key (kbd "M-S-<f6>") (lambda () (interactive) (jw-shell 6)))
-(global-set-key (kbd "M-S-<f7>") (lambda () (interactive) (jw-shell 7)))
 
 (global-set-key (kbd "C-c k") 'kill-other-buffers)
 
