@@ -1,0 +1,20 @@
+# -*- mode: snippet -*-
+# name: Roda App
+# key: roda
+# --
+class ${1:`(let ((fn (capitalize (file-name-nondirectory
+                                 (file-name-sans-extension
+                 (or (buffer-file-name)
+                     (buffer-name (current-buffer))))))))
+       (replace-regexp-in-string "\[_*\]" "" fn))`} < Roda
+  plugin :render, engine: "${1:haml}"
+
+  #  Dir['./models/*.rb'].each{|f| require f}
+  #  Dir['./routes/*.rb'].each{|f| require f}
+
+  route do |r|
+    r.root do
+      "<h1>Welcome</h1>"$0
+    end
+  end
+end
