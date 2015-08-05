@@ -9,6 +9,7 @@
  '(fci-rule-width 4)
  '(rspec-auto-scroll nil)
  '(rspec-command-options "")
+ '(rspec-use-bundler-when-possible nil)
  '(rspec-use-rake-when-possible t))
  '(rspec-use-rake-when-possible nil)
 (custom-set-faces
