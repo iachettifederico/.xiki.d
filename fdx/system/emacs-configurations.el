@@ -4,6 +4,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(ansi-color-names-vector ["black" "red2" "green" "yellow3" "DodgerBlue1" "medium purple" "deep sky blue" "white"])
+ '(enh-ruby-check-syntax (quote errors))
  '(enh-ruby-extra-keywords (quote ("private" "raise" "protected" "module_function" "block_given?")))
  '(fci-rule-color "gray3")
  '(fci-rule-width 4)
