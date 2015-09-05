@@ -1,4 +1,4 @@
-"Normal appearence for Emacs."
+(fdx/set-default-font 20  "Inconsolata")
 
 (require 'color-theme)
 (color-theme-initialize)
@@ -9,10 +9,10 @@
 
 (custom-set-faces
  '(default ((t (:family "Inconsolata"
-                        :foundry "unknown"
-                        :slant normal
-                        :weight normal
-                        :height 120 :width normal)))))
+			:foundry "unknown"
+			:slant normal
+			:weight normal
+			:height 120 :width normal)))))
 
 (show-paren-mode t)
 

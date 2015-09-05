@@ -1,9 +1,10 @@
 ;; Font size
-(global-set-key (kbd "C-+") 'text-scale-increase)
-(global-set-key (kbd "C-<kp-add>") 'text-scale-increase)
-(global-set-key (kbd "C--") 'text-scale-decrease)
-(global-set-key (kbd "C-<kp-subtract>") 'text-scale-decrease)
-(global-set-key (kbd "C-0") 'text-scale-adjust)
+(global-set-key (kbd "C-+") 'fdx/increase-font-size)
+(global-set-key (kbd "C-<kp-add>") 'fdx/increase-font-size)
+(global-set-key (kbd "C--") 'fdx/decrease-font-size)
+(global-set-key (kbd "C-<kp-subtract>") 'fdx/decrease-font-size)
+(global-set-key (kbd "C-0") 'fdx/reset-font-size)
+(global-set-key (kbd "C-<kp-0>") 'fdx/reset-font-size)
 
 (global-set-key (kbd "C-c s") 'query-replace-regexp)
 (global-set-key (kbd "C-c S") 'replace-regexp)
