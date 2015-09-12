@@ -20,7 +20,7 @@
 
 (defun fdx/package-version-for (package)
   "Get the version of a loaded package."
-  (package-desc-vers (cdr (assoc package package-alist))))
+  (package-desc-version (cdr (assoc package package-alist))))
 
 (defun fdx/package-delete-by-name (package)
   "Remove a package by name."
